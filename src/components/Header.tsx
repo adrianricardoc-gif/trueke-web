@@ -30,7 +30,12 @@ const Header = () => {
     <header className="sticky top-0 z-50 w-full bg-card/80 backdrop-blur-lg border-b border-border">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <div className="flex items-center cursor-pointer" onClick={() => navigate("/")}>
-          <img src={logoHorizontal} alt="Trueke" className="h-10 object-contain" />
+          {/* Logo ajustado: de h-10 a h-14 para mayor visibilidad */}
+          <img 
+            src={logoHorizontal} 
+            alt="Trueke" 
+            className="h-14 w-auto object-contain py-1" 
+          />
         </div>
         
         <nav className="hidden md:flex items-center gap-6">
